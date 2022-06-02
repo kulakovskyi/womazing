@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons-fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Womazing</title>
+  </head>
+  <body class=".body">
+    <div class="wrapper">
+      <header class="header lock-padding">
+        <div class="header__container">
+          <div class="header__row">
+            <div class="header__logo">
+              <a href="../../index.html" class="header__link">
+                <img src="img/header/logo.png" alt="logo" />
+                <p class="header__logo__text">Womazing</p>
+              </a>
+            </div>
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="../../index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Магазин</a>
+                </li>
+                <li class="menu__item">
+                  <a href="../About/index.html" class="menu__link">О бренде</a>
+                </li>
+                <li class="menu__item">
+                  <a href="../Contacts/index.html" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <div class="header__telephone">
+                <div class="telephone">
+                  <div class="icon-telephone"></div>
+                  <a href="tel:+74958235412" class="telephone__link">+7 (495) 823-54-12</a>
+                </div>
+              </div>
+              <div class="header__shop">
+                <img src="img/header/shop.png" alt="shop" />
+              </div>
+              <div class="menu__icon">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="bredcrums">
+          <div class="breadcrums__container">
+            <div class="breatcrumbs__title title">Магазин</div>
+            <ol class="breadcrumbs__menu">
+              <li class="dreadcrumbs__item">
+                <a href="../../index.html" class="breadcrumbs__link link-glav">Главная</a>
+              </li>
+              <li class="dreadcrumbs__item">
+                <a href="#" class="breadcrumbs__link breadcrumbs__link_active">Магазин</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="product">
+          <div class="product__container">
+            <div class="products__burger">Категория</div>
+            <div class="product__buttons">
+              <button
+                type="button"
+                data-f="all"
+                class="button__all button__product _active-btn"
+                id="start"
+              >
+                Все
+              </button>
+              <button type="button" data-f="palto" class="button__palto button__product">
+                Пальто
+              </button>
+              <button type="button" data-f="sweetshot" class="button__sweetshot button__product">
+                Свитшоты
+              </button>
+              <button type="button" data-f="kardigan" class="button__kardigan button__product">
+                Кардиганы
+              </button>
+              <button type="button" data-f="tolstovka" class="button__tolstovka button__product">
+                Толстовки
+              </button>
+            </div>
+            <!--
+            <div class="products__count">
+              <p class="product__count__number">
+                Показано: <span class="counter__active">9</span> из
+                <span class="counter__all">12</span> товаров
+              </p>
+            </div>
+            -->
+            <div class="roducts__row">
+              <div class="products__item tolstovka" data-num="1">
+                <div class="products__image">
+                  <img src="img/product/one.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Футболка USA</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-old">$229</div>
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item kardigan" data-num="2">
+                <div class="products__image">
+                  <img src="img/product/two.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Купальник Glow</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item sweetshot" data-num="3">
+                <div class="products__image">
+                  <img src="img/product/three.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Свитшот Sweet Shot</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item tolstovka" data-num="4">
+                <div class="products__image">
+                  <img src="img/product/one.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Футболка USA</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-old">$229</div>
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item kardigan" data-num="5">
+                <div class="products__image">
+                  <img src="img/product/two.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Купальник Glow</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item sweetshot" data-num="6">
+                <div class="products__image">
+                  <img src="img/product/three.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Свитшот Sweet Shot</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item tolstovka" data-num="7">
+                <div class="products__image">
+                  <img src="img/product/one.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Футболка USA</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-old">$229</div>
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item kardigan" data-num="8">
+                <div class="products__image">
+                  <img src="img/product/two.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Купальник Glow</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item sweetshot" data-num="9">
+                <div class="products__image">
+                  <img src="img/product/three.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Свитшот Sweet Shot</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item tolstovka" data-num="10">
+                <div class="products__image">
+                  <img src="img/product/one.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Футболка USA</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-old">$229</div>
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item kardigan" data-num="11">
+                <div class="products__image">
+                  <img src="img/product/two.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Купальник Glow</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__item sweetshot" data-num="12">
+                <div class="products__image">
+                  <img src="img/product/three.jpg" alt="photo" />
+                </div>
+                <div class="products__item__name">Свитшот Sweet Shot</div>
+                <div class="products__item__price">
+                  <div class="product__item__price-new">$$129</div>
+                </div>
+              </div>
+              <div class="products__error">
+                <div class="products__error__text">Товар не найден</div>
+              </div>
+            </div>
+            <!--
+            <div class="products__count">
+              <p class="product__count__number">
+                Показано: <span class="counter__active">9</span> из
+                <span class="counter__all">12</span> товаров
+              </p>
+            </div>
+            -->
+            <div class="paginator" onclick="pagination(event)"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__row__1">
+            <a href="../../index.html" class="footer__item__logo">
+              <img src="img/header/logo.png" alt="logo" />
+              <p class="footer__logo__text">Womazing</p>
+            </a>
+            <div class="footer__item__navigation">
+              <ul class="footer__list">
+                <li class="footer__list__item">
+                  <a href="../../index.html" class="footer__link">Главная</a>
+                </li>
+                <li class="footer__list__item">
+                  <a href="#" class="footer__link">Магазин</a>
+                </li>
+                <li class="footer__list__item">
+                  <a href="../About/index.html" class="footer__link">О бренде</a>
+                </li>
+                <li class="footer__list__item">
+                  <a href="../Contacts/index.html" class="footer__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item__contact">
+              <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+              <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+            </div>
+          </div>
+          <div class="footer__row__2">
+            <div class="footer__item__copyright">
+              <p>© Все права защищены</p>
+              <p>Политика конфиденциальности</p>
+              <p>Публичная оферта</p>
+            </div>
+
+            <div class="footer__item__shop">
+              <ul class="shop__list">
+                <li class="shop__list__item">
+                  <a href="" class="shop__link">Пальто</a>
+                </li>
+                <li class="shop__list__item">
+                  <a href="" class="shop__link">Свитшоты</a>
+                </li>
+                <li class="shop__list__item">
+                  <a href="" class="shop__link">Кардиганы</a>
+                </li>
+                <li class="shop__list__item">
+                  <a href="" class="shop__link">Толстовки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item__social">
+              <div class="social__row">
+                <a href=""><div class="icon-insta"></div></a>
+                <a href=""><div class="icon-facebook"></div></a>
+                <a href=""><div class="icon-tw"></div></a>
+              </div>
+              <div class="solial__pay">
+                <img src="img/footer/pay.png" alt="pay" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="popup__info">
+            <p class="popup__title">Заказать обратный звонок</p>
+            <div class="popupclose"></div>
+            <form action="#" class="popup__form">
+              <input type="text" id="text" name="text" placeholder="Имя" class="js-input" />
+              <input type="email" id="email" name="email" placeholder="E-mail" class="js-input" />
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" class="js-input" />
+              <button type="submit" class="form-sumbit">Заказать звонок</button>
+            </form>
+          </div>
+          <div class="form__succsesfull">
+            <p class="succsesful__text">Отлично! Мы скоро вам перезвоним.</p>
+            <button type="button" class="button__close">Закрыть</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
