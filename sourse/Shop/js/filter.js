@@ -4,6 +4,15 @@ const errorItems = document.querySelector(".products__error");
 
 const buttonActive = document.querySelectorAll(".button__product");
 
+/*******burger adaptive buttons  */
+const iconButton = document.querySelector(".products__burger");
+const menuButton = document.querySelector(".product__buttons");
+
+iconButton.addEventListener("click", function (e) {
+  menuButton.classList.toggle("_active-burger");
+  iconButton.classList.toggle("_active-burger");
+});
+
 buttons.addEventListener("click", (event) => {
   menuButton.classList.remove("_active-burger");
   iconButton.classList.remove("_active-burger");
@@ -12,6 +21,9 @@ buttons.addEventListener("click", (event) => {
     item.classList.remove("_active-btn");
   });
   event.target.classList.add("_active-btn");
+
+  iconButton.innerHTML = event.target.value;
+
   errorItems.style.display = "none";
   if (event.target.dataset["f"] === "palto") errorItems.style.display = "block";
 

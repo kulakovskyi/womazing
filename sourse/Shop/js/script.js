@@ -10,14 +10,6 @@ iconMenu.addEventListener("click", function (e) {
 
 //меню бургер кнопки shop
 
-const iconButton = document.querySelector(".products__burger");
-const menuButton = document.querySelector(".product__buttons");
-
-iconButton.addEventListener("click", function (e) {
-  menuButton.classList.toggle("_active-burger");
-  iconButton.classList.toggle("_active-burger");
-});
-
 /************Скролл и пояление шапки*****************/
 
 let oldScrollTopPosition = 0;
